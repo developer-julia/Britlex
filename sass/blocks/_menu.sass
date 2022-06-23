@@ -1,0 +1,36 @@
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 45px
+    &__link
+        cursor: pointer
+        font-weight: $font-medium
+        font-size: 20px
+        line-height: 30px
+        color: $accent_color
+        transition: all .2s linear
+        &:focus, &:hover, &:active
+            color: $gray_color
+.menu.overlay
+    visibility: visible
+    opacity: 1
+
+@media screen and (max-width: 992px)
+    .menu
+        gap: 30px
+        &__link
+            font-size: 16px
+            line-height: 24px
+@media screen and (max-width: 768px)
+    .menu
+        overflow: auto
+        opacity: 1
+        margin-bottom: 30px
+        margin-top: 70px
+        display: flex
+        flex-direction: column
+        gap: 50px
+        transition: all .5s
+        &__link
+            font-size: 30px

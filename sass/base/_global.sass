@@ -1,0 +1,125 @@
+@import base/vars
+html,
+body
+	height: 100%
+	font-family: $body-font
+h1, h2, h3, h4, h5
+	font-family: $body-font
+	font-weight: $font-semibold
+	color: $black_color
+p
+	font-family: $body-font
+	font-weight: $font-regular
+	color: $light-gray_color
+.body-lock
+	overflow: hidden
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main
+	flex: 1 0 auto
+.footer
+	flex: 0 0 auto
+
+.page
+  max-width: 1360px
+  margin: 0 auto
+  padding: 0 15px
+
+.logo
+	font-weight: $font-regular
+	font-size: 36px
+	line-height: 54px
+	color: $black_color
+	transition: all .2s linear
+	&:hover
+		color: $gray_color
+	&__span
+		color: $gray_color
+@media screen and (max-width: 992px)
+	.logo
+		font-size: 30px
+		line-height: 45px
+
+.button
+	cursor: pointer
+	border-radius: 5px
+.button_small
+	padding: 17px 57px
+	background-color: $accent_color
+	font-weight: $font-medium
+	font-size: 20px
+	line-height: 30px
+	color: $white_color
+	transition: all .3s linear
+	&:hover, &:focus, &:active
+		background-color: $light-white_color
+		color: $accent_color
+.button_medium
+	padding: 15px 51px
+	background-color: transparent
+	border: 2px solid $accent_color
+	font-weight: $font-regular
+	font-size: 24px
+	line-height: 36px
+	color: $black_color
+	transition: all .3s linear
+	&:hover, &:focus, &:active
+		color: $white_color
+		border: 2px solid $accent_color
+		background-color: $accent_color
+.button_big
+	padding: 32px 117px
+	background-color: $accent_color
+	font-weight: $font-regular
+	font-size: 36px
+	line-height: 54px
+	color: $white_color
+	transition: all .3s linear
+	&:hover, &:focus, &:active
+		background-color: $light-white_color
+		color: $accent_color
+
+@media screen and (max-width: 992px)
+	.button_small
+		padding: 16px 41px 19px 42px
+		font-size: 18px
+		line-height: 27px
+	.button_medium
+		padding: 12px 40px
+		font-size: 18px
+		line-height: 27px
+	.button_big
+		padding: 22px 78px
+		font-size: 24px
+		line-height: 36px
+@media screen and (max-width: 768px)
+	.button_small
+		padding: 13px 20px
+		font-size: 16px
+		line-height: 24px
+	.button_big
+		padding: 19px 67px
+		font-size: 18px
+		line-height: 27px
+@media screen and (max-width: 675px)
+	.button_small
+		padding: 16px 56px
+		font-size: 16px
+		line-height: 24px
+		border-radius: 10px
+	.button_big
+		padding: 24px 101px
+		font-size: 18px
+		line-height: 27px
+@media screen and (max-width: 485px)
+	.button_small
+		padding: 14px 42px
+		font-size: 14px
+		line-height: 21px
+	.button_big
+		padding: 18px 92px
+		font-size: 16px
+		line-height: 24px

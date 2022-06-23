@@ -1,0 +1,107 @@
+.home
+    padding-bottom: 0px
+    &__inner
+        display: grid
+        align-items: center
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto auto
+        gap: 20px
+    &__title
+        margin-top: 120px
+        position: relative
+        max-width: 386px
+        font-size: 64px
+        margin-bottom: 40px
+        &::after
+            content: ""
+            position: absolute
+            top: 123px
+            right: -119px
+            background-image: url(../images/home/icon.svg)
+            background-repeat: no-repeat
+            background-size: cover
+            width: 85px
+            height: 85px
+    &__subtitle
+        max-width: 632px
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 61px
+    &__img
+        object-fit: cover
+        max-width: 661
+        height: auto
+        grid-area: 1 / 2 / 3 / 3
+
+@media screen and (max-width: 992px)
+    .home
+        padding-bottom: 50px
+        &__title
+            max-width: 290px
+            font-size: 48px
+            line-height: 64px
+            margin-bottom: 27px
+            &::after
+                top: 94px
+                right: -76px
+        &__subtitle
+            max-width: 520px
+            font-size: 20px
+            line-height: 30px
+            margin-bottom: 33px
+
+@media screen and (max-width: 768px)
+    .home
+        &__title
+            max-width: 217px
+            font-size: 36px
+            line-height: 45px
+            margin-top: 90px
+            margin-bottom: 25px
+            &::after
+                top: 57px
+                right: -82px
+        &__subtitle
+            max-width: 580px
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 32px
+@media screen and (max-width: 675px)
+    .home
+        &__inner
+            display: flex
+            flex-direction: column-reverse
+            justify-content: space-between
+            align-items: center
+        &__info
+            display: flex
+            flex-direction: column
+        &__title
+            text-align: center
+            max-width: 100%
+            font-size: 34px
+            line-height: 45px
+            margin-top: 15px
+            &::after
+                display: none
+        &__subtitle
+            text-align: center
+            max-width: 100%
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 37px
+        &__button
+            margin: 0 auto
+@media screen and (max-width: 485px)
+    .home
+        &__img
+            margin-top: 50px
+        &__title
+            margin-top: 0
+            font-size: 24px
+            line-height: 36px
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 14px
+            line-height: 21px
+            margin-bottom: 35px

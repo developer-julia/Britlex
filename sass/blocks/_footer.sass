@@ -1,0 +1,47 @@
+.footer
+    &__inner
+        border-top: 1px solid #C4C4C4
+        padding-top: 31px
+        padding-bottom: 64px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__link
+        font-size: 24px
+        line-height: 36px
+        color: $light-gray_color
+        transition: all .3s linear
+        &:hover, &:focus
+            color: $accent_color
+    &__link:not(:last-child):after
+        content: '•'
+        margin-left: 5px
+        margin-right: 5px
+
+@media screen and (max-width: 992px)
+    .footer
+        &__inner
+            padding-top: 22px
+            padding-bottom: 24px
+        &__link
+            font-size: 16px
+            line-height: 24px
+@media screen and (max-width: 675px)
+    .footer
+        &__inner
+            padding-top: 24px
+            padding-bottom: 26px
+        &__link
+            font-size: 12px
+            line-height: 18px
+@media screen and (max-width: 485px)
+    .footer
+        &__inner
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding-top: 26px
+            padding-bottom: 46px
+        &__link
+            font-size: 10px
+            line-height: 16px

@@ -1,0 +1,36 @@
+.contact-form
+    display: flex
+    &__input
+        padding: 26px 150px 30px 33px
+        border: 1px solid $light-gray_color
+        border-radius: 10px
+        color: $light-gray_color
+        font-size: 16px
+        line-height: 24px
+        margin-right: 12px
+        &::placeholder
+            color: $light-gray_color
+            font-size: 16px
+            line-height: 24px
+@media screen and (max-width: 992px)
+    .contact-form
+        &__input
+            padding: 26px 40px 30px 33px
+@media screen and (max-width: 768px)
+    .contact-form
+        &__input
+            padding: 26px 15px 30px 33px
+@media screen and (max-width: 675px)
+    .contact-form
+        &__input
+            padding: 20px 20px 20px 25px
+            width: 100%
+            margin-right: -10px
+@media screen and (max-width: 485px)
+    .contact-form
+        flex-direction: column
+        gap: 17px
+        &__input
+            padding: 16px 20px 16px 26px
+            width: 100%
+            margin-right: 0

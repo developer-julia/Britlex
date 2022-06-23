@@ -1,0 +1,130 @@
+.price
+    padding: 160px 0
+    &__title
+        text-align: center
+        font-size: 48px
+        margin-bottom: 57px
+    &__inner
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 30px
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        height: 100%
+    &__item-img
+        object-fit: cover
+        max-width: 370px
+        height: auto
+    &__item-title
+        font-size: 30px
+        line-height: 48px
+        color: $accent_color
+        margin-bottom: 19px
+    &__item-subtitle
+        font-size: 20px
+        line-height: 30px
+        margin-bottom: 29px
+    &__item-cost
+        display: flex
+        align-items: self-start
+        max-width: 260px
+        background-color: $gray-bg_color
+        border-radius: 5px
+        padding: 0 24px 0 18px
+        margin-top: auto
+    &__item-num
+        font-size: 30px
+        line-height: 45px
+        color: $accent_color
+    &__item-text
+        margin: 7px 0 11px 5px
+        font-size: 18px
+        line-height: 27px
+        color: #546269
+@media screen and (max-width: 992px)
+    .price
+        padding: 120px 0
+        &__title
+            font-size: 36px
+            margin-bottom: 10px
+        &__item-title
+            font-size: 22px
+            line-height: 34px
+            margin-bottom: 9px
+            margin-top: 5px
+        &__item-subtitle
+            font-size: 16px
+            line-height: 24px
+            margin-bottom: 31px
+        &__item-cost
+            padding: 5px 23px 4px 20px
+        &__item-num
+            font-size: 24px
+            line-height: 36px
+        &__item-text
+            margin: 6px 0 0px 10px
+            font-size: 16px
+            line-height: 24px
+@media screen and (max-width: 768px)
+    .price
+        padding: 100px 0
+        &__title
+            font-size: 30px
+            margin-bottom: 26px
+        &__item-title
+            font-weight: 600
+            font-size: 20px
+            margin-bottom: 15px
+        &__item-subtitle
+            font-size: 14px
+            line-height: 21px
+            margin-bottom: 23px
+        &__item-cost
+            padding: 5px 8px 7px 17px
+        &__item-num
+            font-size: 22px
+            line-height: 33px
+        &__item-text
+            margin: 6px 0 0px 10px
+            font-size: 16px
+            line-height: 24px
+@media screen and (max-width: 675px)
+    .price
+        &__inner
+            grid-template-columns: 1fr
+            justify-items: center
+        &__item
+            align-items: center
+        &__item-info
+            max-width: 400px
+            display: flex
+            flex-direction: column
+            justify-content: center
+        &__item-title
+            text-align: center
+        &__item-subtitle
+            text-align: center
+        &__item-cost
+            padding: 5px 23px 7px 12px
+@media screen and (max-width: 485px)
+    .price
+        &__item-title
+            font-size: 18px
+            line-height: 28px
+        &__item-subtitle
+            margin: 0 auto
+            margin-bottom: 30px
+            max-width: 290px
+            font-size: 13px
+            line-height: 20px
+        &__item-cost
+            padding: 5px 15px 5px 12px
+        &__item-num
+            font-size: 18px
+            line-height: 27px
+        &__item-text
+            margin: 3px 0 0px 10px
+            font-size: 14px
+            line-height: 21px

@@ -1,0 +1,40 @@
+.burger-menu
+    display: none
+
+@media screen and (max-width: 768px)
+    .burger-menu span, .burger-menu::before, .burger-menu::after
+        height: 3px
+        width: 100%
+        position: absolute
+        background: $accent_color
+        border-radius: 1px
+        margin: 0 auto
+    .burger-menu span
+        top: 16px
+        width: 21px
+    .burger-menu::before, .burger-menu::after
+        content: ""
+    .burger-menu::before
+        top: 5px
+    .burger-menu::after
+        bottom: 5px
+
+    .burger-menu
+        position: absolute
+        top: 25%
+        right: 5%
+        display: block
+        width: 30px
+        height: 19px
+        z-index: 10
+        transition: transform .2s
+        &_active span
+            opacity: 0
+        &_active
+            &::before
+                top: 50%
+                transform: rotate(45deg)
+        &_active
+            &::after
+                top: 50%
+                transform: rotate(-45deg)

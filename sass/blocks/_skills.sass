@@ -1,0 +1,147 @@
+.skills
+    padding: 180px 0 160px 0
+    &__title
+        text-align: center
+        font-size: 48px
+        margin-bottom: 50px
+    &__inner
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-template-rows: repeat(2,auto)
+        gap: 20px 18px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: self-start
+        padding: 35px 30px 44px 30px
+        border-radius: 5px
+        background-color: $light-white_color
+    &__item-img
+        object-fit: cover
+        max-width: 390px
+        height: auto
+    &__item-title
+        font-size: 30px
+        line-height: 80px
+        color: $accent_color
+        margin-bottom: 5px
+    &__item-text
+        max-width: 368px
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 16px
+    &__item-text p
+        padding-bottom: 20px
+    &__button
+        margin-top: auto
+.reading
+    grid-area: 1 / 3 / 2 / 4
+.reading>.skills__item-img
+    margin-bottom: 47px
+.writing
+    grid-area: 1 / 2 / 2 / 3
+.writing, .reading
+    padding-top: 0
+.speaking
+    grid-area: 1 / 1 / 3 / 2
+.listening
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+    align-items: center
+    grid-area: 2 / 2 / 3 / 4
+
+@media screen and (max-width: 992px)
+    .skills
+        padding: 120px 0
+        &__title
+            font-size: 36px
+            margin-bottom: 52px
+        &__inner
+            gap: 13px
+        &__item
+            padding: 0 13px 30px 28px
+        &__item-title
+            font-size: 22px
+        &__item-text
+            font-size: 14px
+            line-height: 21px
+
+@media screen and (max-width: 767px)
+    .skills
+        padding: 100px 0
+        &__title
+            font-size: 30px
+            margin-bottom: 36px
+        &__inner
+            gap: 13px 10px
+        &__item
+            padding: 0 10px 27px 17px
+        &__item-title
+            font-size: 20px
+        &__item-text
+            font-size: 13px
+            line-height: 20px
+
+@media screen and (max-width: 675px)
+    .skills
+        padding: 100px 0
+        &__title
+            font-size: 30px
+            margin-bottom: 34px
+        &__inner
+            grid-template-columns: repeat(2,1fr)
+            grid-template-rows: repeat(2,auto)
+            gap: 34px 30px
+        &__item
+            padding: 0 25px 36px 25px
+        &__item-title
+            font-size: 18px
+            line-height: 50px
+        &__item-text
+            font-size: 12px
+            line-height: 18px
+    .reading
+        grid-area: 2 / 1 / 3 / 2
+    .reading>.skills__item-img
+        margin-bottom: 47px
+    .writing
+        grid-area: 1 / 2 / 2 / 3
+    .writing, .reading
+        padding-top: 0
+    .speaking
+        grid-area: 1 / 1 / 2 / 2
+    .listening
+        flex-direction: column
+        grid-area: 2 / 2 / 3 / 3
+
+@media screen and (max-width: 575px)
+    .skills
+        padding: 24px 0 21px 0
+        &__inner
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 20px
+        &__item
+            padding: 20px 35px 46px 35px
+        &__item-title
+            margin-top: 15px
+            font-size: 25px
+        &__item-text
+            max-width: 100%
+            font-size: 14px
+            line-height: 21px
+    .writing, .reading
+        padding-top: 25px
+@media screen and (max-width: 485px)
+    .skills
+        padding: 100px 0
+        &__item
+            padding: 30px 17px 46px 15px
+        &__item-title
+            font-size: 18px
+        &__item-text
+            font-size: 13px
+            line-height: 20px
